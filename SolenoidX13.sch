@@ -846,6 +846,30 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </device>
 </devices>
 </deviceset>
+<deviceset name="4.7KOHM" urn="urn:adsk.eagle:component:39723/1" prefix="R" library_version="1">
+<description>&lt;h3&gt;4.7kΩ resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39650/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07857"/>
+<attribute name="VALUE" value="4.7k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply2" urn="urn:adsk.eagle:library:372">
@@ -2991,6 +3015,8 @@ by exp-lbrs.ulp</description>
 <part name="J1" library="SAMTEC-CLT-111-01-X-D" deviceset="SAMTEC-CLT-111-01-X-D" device="J"/>
 <part name="SV1" library="con-lsta" library_urn="urn:adsk.eagle:library:161" deviceset="FE05-1" device="" package3d_urn="urn:adsk.eagle:package:8190/1"/>
 <part name="U$1" library="Push button - FSM2JMTR" deviceset="DISCRETECOMPONENTS_SWITCH" device="" package3d_urn="urn:adsk.eagle:package:24384574/2"/>
+<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
+<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 </parts>
 <sheets>
 <sheet>
@@ -3042,9 +3068,7 @@ by exp-lbrs.ulp</description>
 <instance part="GND1" gate="GND" x="86.36" y="129.54" smashed="yes">
 <attribute name="VALUE" x="84.455" y="126.365" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="GND" x="119.38" y="76.2" smashed="yes">
-<attribute name="VALUE" x="117.475" y="73.025" size="1.778" layer="96"/>
-</instance>
+<instance part="GND2" gate="GND" x="119.38" y="76.2" smashed="yes"/>
 <instance part="C7" gate="G$1" x="33.02" y="99.06" smashed="yes">
 <attribute name="NAME" x="34.544" y="101.981" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="34.544" y="96.901" size="1.778" layer="96" font="vector"/>
@@ -3074,6 +3098,14 @@ by exp-lbrs.ulp</description>
 <attribute name="VALUE" x="68.58" y="116.84" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$1" gate="G$1" x="45.72" y="101.6" smashed="yes" rot="R90"/>
+<instance part="R4" gate="G$1" x="127" y="68.58" smashed="yes">
+<attribute name="NAME" x="127" y="70.104" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="127" y="67.056" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R5" gate="G$1" x="127" y="60.96" smashed="yes">
+<attribute name="NAME" x="127" y="62.484" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="127" y="59.436" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3271,20 +3303,6 @@ by exp-lbrs.ulp</description>
 <pinref part="U$3" gate="G$1" pin="PA5"/>
 </segment>
 </net>
-<net name="C2_1" class="0">
-<segment>
-<wire x1="114.3" y1="73.66" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
-<label x="114.3" y="73.66" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$3" gate="G$1" pin="PB0"/>
-</segment>
-</net>
-<net name="C2_2" class="0">
-<segment>
-<wire x1="116.84" y1="73.66" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
-<label x="116.84" y="73.66" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$3" gate="G$1" pin="PB1"/>
-</segment>
-</net>
 <net name="GPIO0" class="0">
 <segment>
 <wire x1="86.36" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
@@ -3339,6 +3357,36 @@ by exp-lbrs.ulp</description>
 <wire x1="132.08" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
 <label x="142.24" y="114.3" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="PA13"/>
+</segment>
+</net>
+<net name="C2_2" class="0">
+<segment>
+<wire x1="132.08" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
+<label x="132.08" y="68.58" size="1.778" layer="95"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="C2_1" class="0">
+<segment>
+<wire x1="132.08" y1="60.96" x2="142.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="132.08" y="60.96" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="PB1"/>
+<wire x1="116.84" y1="83.82" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="68.58" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="PB0"/>
+<wire x1="114.3" y1="83.82" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
