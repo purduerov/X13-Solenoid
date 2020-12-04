@@ -3232,7 +3232,7 @@ by exp-lbrs.ulp</description>
 <label x="142.24" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="NRST1" class="0">
+<net name="NRST" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -3244,6 +3244,7 @@ by exp-lbrs.ulp</description>
 <wire x1="33.02" y1="114.3" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
 <junction x="45.72" y="109.22"/>
+<label x="73.66" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED" class="0">
