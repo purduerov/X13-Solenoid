@@ -1657,8 +1657,9 @@ Please make sure your boards conform to these design rules.
 <signal name="12V">
 <contactref element="U1" pad="9"/>
 <contactref element="R1" pad="2"/>
-<wire x1="10.3632" y1="21.629" x2="9.7282" y2="20.994" width="0.254" layer="1"/>
-<wire x1="9.7282" y1="20.994" x2="9.7282" y2="12.9032" width="0.254" layer="1"/>
+<wire x1="10.3632" y1="21.629" x2="10.3632" y2="21.4004" width="0.254" layer="1"/>
+<wire x1="10.3632" y1="21.4004" x2="9.7282" y2="20.7654" width="0.254" layer="1"/>
+<wire x1="9.7282" y1="20.7654" x2="9.7282" y2="12.9032" width="0.254" layer="1"/>
 <wire x1="9.7282" y1="12.9032" x2="9.271" y2="12.446" width="0.254" layer="1"/>
 <via x="9.271" y="12.446" extent="1-16" drill="0.35"/>
 <contactref element="J1" pad="11"/>
