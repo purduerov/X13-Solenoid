@@ -3631,14 +3631,14 @@ by exp-lbrs.ulp</description>
 <pinref part="J1" gate="A" pin="10"/>
 </segment>
 <segment>
-<wire x1="215.9" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
-<label x="220.98" y="104.14" size="1.778" layer="95"/>
-<pinref part="J1" gate="A" pin="4"/>
-</segment>
-<segment>
 <wire x1="215.9" y1="93.98" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
 <label x="220.98" y="93.98" size="1.778" layer="95"/>
 <pinref part="J1" gate="A" pin="12"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
+<label x="220.98" y="101.6" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -3788,9 +3788,9 @@ by exp-lbrs.ulp</description>
 <label x="154.94" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="215.9" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
-<label x="220.98" y="101.6" size="1.778" layer="95"/>
-<pinref part="J1" gate="A" pin="6"/>
+<wire x1="215.9" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
+<label x="220.98" y="104.14" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
