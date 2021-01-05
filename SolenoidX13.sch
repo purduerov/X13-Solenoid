@@ -3813,6 +3813,11 @@ by exp-lbrs.ulp</description>
 <wire x1="144.78" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
 <label x="154.94" y="96.52" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="185.42" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
+<label x="175.26" y="91.44" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="13"/>
+</segment>
 </net>
 <net name="C2_2" class="0">
 <segment>
