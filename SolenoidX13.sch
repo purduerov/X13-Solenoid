@@ -3631,11 +3631,6 @@ by exp-lbrs.ulp</description>
 <pinref part="J1" gate="A" pin="10"/>
 </segment>
 <segment>
-<wire x1="215.9" y1="93.98" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
-<label x="220.98" y="93.98" size="1.778" layer="95"/>
-<pinref part="J1" gate="A" pin="12"/>
-</segment>
-<segment>
 <wire x1="215.9" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
 <label x="220.98" y="101.6" size="1.778" layer="95"/>
 <pinref part="J1" gate="A" pin="6"/>
@@ -3799,12 +3794,22 @@ by exp-lbrs.ulp</description>
 <wire x1="144.78" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
 <label x="154.94" y="99.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="215.9" y1="91.44" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
+<label x="226.06" y="91.44" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="14"/>
+</segment>
 </net>
 <net name="SWCLK" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="4"/>
 <wire x1="144.78" y1="104.14" x2="160.02" y2="104.14" width="0.1524" layer="91"/>
 <label x="154.94" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="215.9" y1="93.98" x2="231.14" y2="93.98" width="0.1524" layer="91"/>
+<label x="226.06" y="93.98" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="12"/>
 </segment>
 </net>
 <net name="NRST" class="0">
