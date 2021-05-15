@@ -2752,14 +2752,14 @@ by exp-lbrs.ulp</description>
 <wire x1="99.06" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SWDIO" class="0">
+<net name="SWCLK" class="0">
 <segment>
 <wire x1="116.84" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <label x="127" y="104.14" size="1.778" layer="95"/>
 <pinref part="STM" gate="G$1" pin="PA14"/>
 </segment>
 </net>
-<net name="SWCLK" class="0">
+<net name="SWDIO" class="0">
 <segment>
 <wire x1="116.84" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
 <label x="127" y="101.6" size="1.778" layer="95"/>
