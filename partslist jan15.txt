@@ -1,0 +1,33 @@
+Partlist
+
+Exported from SolenoidX13.brd at 1/15/2021 2:24 PM
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value          Package                    Library                      Position (mil)        Orientation
+
+C1       4.7uF          0603                       SparkFun-Capacitors          (700 795)             MR90
+C2       4.7uF          0603                       SparkFun-Capacitors          (646 598)             MR180
+C3       4.7uF          0603                       SparkFun-Capacitors          (642 795)             MR90
+C4       4.7uF          0603                       SparkFun-Capacitors          (646 656)             MR180
+C5       4.7uF          0603                       SparkFun-Capacitors          (646 904)             MR180
+C6       4.7uF          0603                       SparkFun-Capacitors          (646 962)             MR180
+C7       4.7uF          0603                       SparkFun-Capacitors          (916 646)             MR270
+C10      4.7uF          0603                       SparkFun-Capacitors          (715 158)             MR90
+D1       Green          LED-0603                   SparkFun-LED                 (882 870)             R0
+D2       Orange         LED-0603                   SparkFun-LED                 (882 917)             R0
+D4       Red            LED-0603                   SparkFun-LED                 (882 965)             R0
+R1       680            0603                       SparkFun-Resistors           (493 965)             R180
+R2       1k             0603                       SparkFun-Resistors           (880 823)             MR0
+R3       82             0603                       SparkFun-Resistors           (646 904)             R180
+R4       4.7k           0603                       SparkFun-Resistors           (320 483)             R270
+R5       4.7k           0603                       SparkFun-Resistors           (262 449)             R270
+R7       470            0603                       SparkFun-Resistors           (858 726)             MR270
+RESET                   DISCRETECOMPONENTS_SW_2512 Push button - FSM2JMTR       (873 673)             R90
+STM      STM32F042K6T6  STM32F042K6T6              PI_Shield_Library            (473 789)             R270
+SV1                     FE05-1                     con-lsta                     (868 247)             R270
+U$1      SOL-TO-BKP     MMS-111-01-DV              Solenoid-Backplane Connector (90 885)              R270
+U$8      TCAN337D       TCAN337D                   PI_Shield_Library            (482 64)              MR0
+U1       ULN2003V12     ULN2003V12                 ULN2003V12                   (434 697)             MR0
